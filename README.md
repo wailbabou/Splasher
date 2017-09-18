@@ -82,6 +82,8 @@ and finally
 ```
 ## Use your custom layout 
 
+![alt text](https://s26.postimg.org/cysmieii1/five.gif)
+
 ```java
 ... code ....
  config.setCustomView(R.layout.custom_view)
