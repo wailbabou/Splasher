@@ -126,7 +126,14 @@ public abstract class SplasherActivity extends AppCompatActivity {
         }
         if(config.getSubtitleTypeFace()!=null){
             Typeface typeface = config.getSubtitleTypeFace();
-            appname.setTypeface(typeface);
+            byname.setTypeface(typeface);
+        }
+        // init Size
+        if(config.getTitleSize()!=Const.NOT_SET){
+            appname.setTextSize(config.getTitleSize());
+        }
+        if(config.getSubtitleSize()!=Const.NOT_SET){
+            byname.setTextSize(config.getSubtitleSize());
         }
     }
     public void initFinish(){

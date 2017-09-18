@@ -30,6 +30,10 @@ public class SplasherConfig {
     private Typeface titleTypeFace;
     private Typeface subtitleTypeFace;
 
+    //Text size
+    private int titleSize=Const.NOT_SET;
+    private int subtitleSize=Const.NOT_SET;
+
     //Custom splash
     private int customView=Const.NOT_SET;
 
@@ -146,6 +150,24 @@ public class SplasherConfig {
 
     public SplasherConfig setCustomView(int customView) {
         this.customView = customView;
+        return this;
+    }
+
+    public int getTitleSize() {
+        return titleSize;
+    }
+
+    public SplasherConfig setTitleSize(int titleSize) {
+        this.titleSize = titleSize;
+        return this;
+    }
+
+    public int getSubtitleSize() {
+        return subtitleSize;
+    }
+
+    public SplasherConfig setSubtitleSize(int subtitleSize) {
+        this.subtitleSize = subtitleSize;
         return this;
     }
 }

@@ -14,7 +14,7 @@ public class MainActivity extends SplasherActivity {
 
     @Override
     public void initSplasher(SplasherConfig config) {
-        config.setReveal_start(Const.START_CENTER)
+        config.setReveal_start(Const.START_TOP_LEFT)
                 //---------------
                 .setAnimationDuration(5000)
                 //---------------
@@ -25,16 +25,18 @@ public class MainActivity extends SplasherActivity {
                 .setTitle("Splasher Example")
                 .setTitleColor(Color.parseColor("#ffffff"))
                 .setTitleAnimation(Techniques.Bounce)
+                .setTitleSize(24)
                 //---------------
                 .setSubtitle("Enjoy with this library")
                 .setSubtitleColor(Color.parseColor("#ffffff"))
                 .setSubtitleAnimation(Techniques.FadeIn)
+                .setSubtitleSize(16)
                 //---------------
                 .setSubtitleTypeFace(Typeface.createFromAsset(getAssets(),"diana.otf"))
                 .setTitleTypeFace(Typeface.createFromAsset(getAssets(),"stc.otf"));
 
        //Example of custom view ..
-        /*config.setCustomView(R.layout.custom_view)
+       /* config.setCustomView(R.layout.custom_view)
                 .setReveal_start(Const.START_CENTER)
                 .setAnimationDuration(5000);
         getCustomView().findViewById(R.id.textView)*/
