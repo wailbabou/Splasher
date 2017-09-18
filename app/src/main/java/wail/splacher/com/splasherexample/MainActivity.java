@@ -1,6 +1,10 @@
 package wail.splacher.com.splasherexample;
 
+import android.graphics.Color;
+import android.graphics.Typeface;
 import android.widget.Toast;
+
+import com.daimajia.androidanimations.library.Techniques;
 
 import wail.splacher.com.splasher.lib.SplasherActivity;
 import wail.splacher.com.splasher.models.SplasherConfig;
@@ -10,7 +14,7 @@ public class MainActivity extends SplasherActivity {
 
     @Override
     public void initSplasher(SplasherConfig config) {
-       /* config.setReveal_start(Const.START_CENTER)
+        config.setReveal_start(Const.START_CENTER)
                 //---------------
                 .setAnimationDuration(5000)
                 //---------------
@@ -27,8 +31,7 @@ public class MainActivity extends SplasherActivity {
                 .setSubtitleAnimation(Techniques.FadeIn)
                 //---------------
                 .setSubtitleTypeFace(Typeface.createFromAsset(getAssets(),"diana.otf"))
-                .setTitleTypeFace(Typeface.createFromAsset(getAssets(),"stc.otf"))
-                ;*/
+                .setTitleTypeFace(Typeface.createFromAsset(getAssets(),"stc.otf"));
 
        //Example of custom view ..
         /*config.setCustomView(R.layout.custom_view)
