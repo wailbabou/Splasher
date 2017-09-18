@@ -30,7 +30,7 @@ and then in dependencies:
 
 ```
 dependencies {
-	         compile 'com.github.wailbabou:Splasher:0.1'
+	         compile 'com.github.wailbabou:Splasher:0.1.0'
 	}
 ```
 
