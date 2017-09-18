@@ -94,7 +94,7 @@ and to get the view , just like that :
 getCustomView().findViewById(R.id.yourId);
 ```
 
-#LICENSE
+# LICENSE
 
 ```
 MIT License
