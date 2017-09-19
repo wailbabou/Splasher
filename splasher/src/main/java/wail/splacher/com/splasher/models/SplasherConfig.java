@@ -17,6 +17,7 @@ public class SplasherConfig {
     //ImageViews
     private int logo=Const.NOT_SET;
     private Techniques logo_animation;
+    private int logoWidth =Const.NOT_SET;
 
     //Titles
     private String title;
@@ -168,6 +169,15 @@ public class SplasherConfig {
 
     public SplasherConfig setSubtitleSize(int subtitleSize) {
         this.subtitleSize = subtitleSize;
+        return this;
+    }
+
+    public int getLogoWidth() {
+        return logoWidth;
+    }
+
+    public SplasherConfig setLogoWidth(int logoWidth) {
+        this.logoWidth = logoWidth;
         return this;
     }
 }

@@ -21,6 +21,7 @@ public class MainActivity extends SplasherActivity {
                 .setLogo(R.drawable.web_hi_res_512)
                 .setLogo_animation(Techniques.BounceIn)
                 .setAnimationLogoDuration(2000)
+                .setLogoWidth(500)
                 //---------------
                 .setTitle("Splasher Example")
                 .setTitleColor(Color.parseColor("#ffffff"))

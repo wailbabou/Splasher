@@ -11,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.animation.Animation;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -95,6 +96,11 @@ public abstract class SplasherActivity extends AppCompatActivity {
                         YoYo.with(config.getLogo_animation())
                                 .duration(Const.ANIMATION_LOGO_DURATION)
                                 .playOn(logo);
+                    }
+                    if(config.getLogoWidth()!=Const.NOT_SET){
+                        RelativeLayout.LayoutParams layoutParams
+                                = new RelativeLayout.LayoutParams(config.getLogoWidth(), config.getLogoWidth());
+                        logo.setLayoutParams(layoutParams);
                     }
                 }
             }

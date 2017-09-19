@@ -30,7 +30,7 @@ and then in dependencies:
 
 ```
 dependencies {
-	         compile 'com.github.wailbabou:Splasher:0.1.1'
+	         compile 'com.github.wailbabou:Splasher:0.1.2'
 	}
 ```
 
@@ -56,6 +56,7 @@ we have 5 type of reveal animation :
                 .setLogo(R.drawable.web_hi_res_512) // logo src..
                 .setLogo_animation(Techniques.BounceIn) // logo animation ..
                 .setAnimationLogoDuration(2000) // logo animation duration ..
+                .setLogoWidth(500) // logo width ..
                 //---------------
                 .setTitle("Splasher Example") // title ..
                 .setTitleColor(Color.parseColor("#ffffff")) // title color ..
